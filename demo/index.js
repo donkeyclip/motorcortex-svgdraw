@@ -86,7 +86,8 @@ const draw4 = new DrawPlugin.Draw({
     }
 }, {
     selector: '#svg-4 path',
-    duration: 1500
+    duration: 1500,
+    delay: "@stagger(0, 500, 1, linear, linear, true)"
 });
 
 const draw5 = new DrawPlugin.Draw({
@@ -103,6 +104,6 @@ clip.addIncident(draw1, 0);
 clip.addIncident(draw2, 2000);
 clip.addIncident(draw3, 4000);
 clip.addIncident(draw4, 6000);
-clip.addIncident(draw5, 7500);
+clip.addIncident(draw5, 8000);
 
 const player = new Player({clip});

@@ -184,15 +184,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function");
   }
 
-  function r(t, e) {
+  function o(t, e) {
     for (var n = 0; n < e.length; n++) {
-      var r = e[n];
-      r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(t, r.key, r);
+      var o = e[n];
+      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(t, o.key, o);
     }
   }
 
-  function o(t) {
-    return (o = Object.setPrototypeOf ? Object.getPrototypeOf : function (t) {
+  function r(t) {
+    return (r = Object.setPrototypeOf ? Object.getPrototypeOf : function (t) {
       return t.__proto__ || Object.getPrototypeOf(t);
     })(t);
   }
@@ -225,19 +225,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     return function () {
       var n,
-          r = o(t);
+          o = r(t);
 
       if (e) {
-        var i = o(this).constructor;
-        n = Reflect.construct(r, arguments, i);
-      } else n = r.apply(this, arguments);
+        var i = r(this).constructor;
+        n = Reflect.construct(o, arguments, i);
+      } else n = o.apply(this, arguments);
 
       return u(this, n);
     };
   }
 
   return {
-    npm_name: "my-plugin-name",
+    npm_name: "@kissmybutton/motorcortex-svgdraw",
     incidents: [{
       exportable: function (t) {
         !function (t, e) {
@@ -251,7 +251,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           }), e && i(t, e);
         }(f, t);
         var e,
-            o,
+            r,
             u,
             c = a(f);
 
@@ -259,7 +259,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           return n(this, f), c.apply(this, arguments);
         }
 
-        return e = f, (o = [{
+        return e = f, (r = [{
           key: "getScratchValue",
           value: function value() {
             return this.pathLength = Math.ceil(this.element.getTotalLength()), this.element.style.strokeDasharray = this.pathLength + " " + this.pathLength, this.element.style.strokeDashoffset = this.pathLength, 0;
@@ -275,7 +275,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             var n = (this.targetValue - this.initialValue) * t + this.initialValue;
             this.element.style.strokeDashoffset = Math.ceil(this.pathLength * (1 - n));
           }
-        }]) && r(e.prototype, o), u && r(e, u), f;
+        }]) && o(e.prototype, r), u && o(e, u), f;
       }(e(t).default.Effect),
       name: "Draw",
       attributesValidationRules: {
@@ -388,7 +388,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "84ed40a1af0ef3c12313"
+/******/ 		__webpack_require__.h = () => "2e354bc97c1c06b1d061"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

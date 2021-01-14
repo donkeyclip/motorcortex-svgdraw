@@ -1,7 +1,7 @@
 import Draw from './Incidents/Draw';
 
 export default {
-  npm_name: "my-plugin-name", // !! make sure the name of your plugin is identical to the name of your package.json !!
+  npm_name: "@kissmybutton/motorcortex-svgdraw", // !! make sure the name of your plugin is identical to the name of your package.json !!
   incidents: [
     {
       exportable: Draw,

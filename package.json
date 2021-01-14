@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-svgdraw",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Progressively render any svg path up to any percent of it",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",

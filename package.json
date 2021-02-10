@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-svgdraw",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Progressively render any svg path up to any percent of it",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -38,7 +38,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "6.2.2"
+    "@kissmybutton/motorcortex": "6.2.3"
   },
   "devDependencies": {
     "@babel/cli": "7.12.10",
@@ -46,7 +46,7 @@
     "@babel/plugin-syntax-jsx": "7.12.1",
     "@babel/plugin-transform-react-jsx": "7.12.12",
     "@babel/preset-env": "7.12.11",
-    "@kissmybutton/motorcortex": "6.2.2",
+    "@kissmybutton/motorcortex": "6.2.3",
     "@kissmybutton/motorcortex-player": "1.7.0",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
@@ -71,6 +71,7 @@
     "@rollup/plugin-babel": "5.2.2",
     "@rollup/plugin-node-resolve": "11.0.1",
     "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "shelljs": "0.8.4",
     "stylelint": "13.8.0",
     "stylelint-config-prettier": "8.0.2",

@@ -246,7 +246,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
   return {
     npm_name: "@kissmybutton/motorcortex-svgdraw",
-    version: "0.0.4",
+    version: "0.0.5",
     incidents: [{
       exportable: function (t) {
         !function (t, e) {
@@ -397,7 +397,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "94a140378f5b9fa21e8e"
+/******/ 		__webpack_require__.h = () => "3ed16b093c5a3a62293e"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

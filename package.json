@@ -1,0 +1,98 @@
+{
+  "name": "@donkeyclip/motorcortex-svgdraw",
+  "version": "0.0.8",
+  "description": "Progressively render any svg path up to any percent of it",
+  "main": "dist/motorcortex-svgdraw.cjs.js",
+  "module": "dist/motorcortex-svgdraw.esm.js",
+  "browser": "dist/motorcortex-svgdraw.umd.js",
+  "author": "KissMyButton PC (kissmybutton.gr) <opensource@kissmybutton.gr>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kissmybutton/motorcortex-svgdraw"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "concurrently": "concurrently -c \"cyan.bold,magenta.bold\" --names \"JS,Styles\"",
+    "lint:styles": "stylelint  --allow-empty-input \"src/**.css\" \"src/**/*.scss\" --config .stylelintrc.json",
+    "lint:js": "eslint -c .eslintrc src/**/*.js",
+    "lint": "npm run concurrently \"npm:lint:js\" \"npm:lint:styles\"",
+    "lint:fix": "npm run concurrently  \"npm:lint:js -- --fix\" \"npm:lint:styles -- --fix\"",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "rollup -c",
+    "start": "npm run build:lib && concurrently -c \"cyan.bold,magenta.bold\" \"npm:build:lib -- -w\"  \"npm:start:demo\" ",
+    "start:demo": "webpack serve --config ./demo/webpack.config.js --mode=development --progress ",
+    "build:demo": "webpack --mode=production --config ./demo/webpack.config.js",
+    "test": "HERE GOES YOUR TEST TASK",
+    "test:prod": "npm run lint",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "motorcortex"
+  ],
+  "lint-staged": {
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write",
+      "stylelint  \"src/**.css\" --config .stylelintrc.json --fix"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "@donkeyclip/motorcortex": ">= 6.4.1 < 8"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/core": "7.12.10",
+    "@babel/plugin-syntax-jsx": "7.12.1",
+    "@babel/plugin-transform-react-jsx": "7.12.12",
+    "@babel/preset-env": "7.12.11",
+    "@donkeyclip/motorcortex": "^7.4.0",
+    "@donkeyclip/motorcortex-player": "2.2.1",
+    "@rollup/plugin-babel": "5.2.2",
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "@size-limit/preset-big-lib": "5.0.4",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "concurrently": "5.3.0",
+    "css-loader": "5.0.1",
+    "es6-promise": "4.2.8",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.1.0",
+    "exports-loader": "2.0.0",
+    "husky": "^7.0.0",
+    "imports-loader": "1.2.0",
+    "npx": "10.2.2",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "rollup": "2.36.1",
+    "rollup-plugin-terser": "5.3.1",
+    "shelljs": "0.8.4",
+    "size-limit": "5.0.4",
+    "webpack": "5.53.0",
+    "webpack-cli": "4.8.0",
+    "webpack-dev-server": "3.11.2",
+    "whatwg-fetch": "3.5.0"
+  }
+}

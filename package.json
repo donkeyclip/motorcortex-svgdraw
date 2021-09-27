@@ -1,10 +1,10 @@
 {
-  "name": "@kissmybutton/motorcortex-svgdraw",
+  "name": "@donkeyclip/motorcortex-svgdraw",
   "version": "0.0.8",
   "description": "Progressively render any svg path up to any percent of it",
-  "main": "dist/bundle.cjs.js",
-  "module": "dist/bundle.esm.js",
-  "browser": "dist/bundle.umd.js",
+  "main": "dist/motorcortex-svgdraw.cjs.js",
+  "module": "dist/motorcortex-svgdraw.esm.js",
+  "browser": "dist/motorcortex-svgdraw.umd.js",
   "author": "KissMyButton PC (kissmybutton.gr) <opensource@kissmybutton.gr>",
   "repository": {
     "type": "git",
@@ -23,22 +23,35 @@
     "build": "npm run build:lib && npm run build:demo",
     "build:lib": "rollup -c",
     "start": "npm run build:lib && concurrently -c \"cyan.bold,magenta.bold\" \"npm:build:lib -- -w\"  \"npm:start:demo\" ",
-    "start:demo": "webpack serve --mode=development --config ./demo/webpack.config.js",
+    "start:demo": "webpack serve --config ./demo/webpack.config.js --mode=development --progress ",
     "build:demo": "webpack --mode=production --config ./demo/webpack.config.js",
     "test": "HERE GOES YOUR TEST TASK",
-    "test:prod": "npm run lint"
+    "test:prod": "npm run lint",
+    "prepare": "husky install"
   },
   "keywords": [
     "motorcortex"
   ],
+  "lint-staged": {
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write",
+      "stylelint  \"src/**.css\" --config .stylelintrc.json --fix"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {},
   "peerDependencies": {
-    "@kissmybutton/motorcortex": ">= 6.4.1 < 8"
+    "@donkeyclip/motorcortex": ">= 6.4.1 < 8"
   },
   "devDependencies": {
     "@babel/cli": "7.12.10",
@@ -46,8 +59,13 @@
     "@babel/plugin-syntax-jsx": "7.12.1",
     "@babel/plugin-transform-react-jsx": "7.12.12",
     "@babel/preset-env": "7.12.11",
-    "@kissmybutton/motorcortex": "^7.0.1",
-    "@kissmybutton/motorcortex-player": "2.0.5",
+    "@donkeyclip/motorcortex": "^7.4.0",
+    "@donkeyclip/motorcortex-player": "2.2.1",
+    "@rollup/plugin-babel": "5.2.2",
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "@size-limit/preset-big-lib": "5.0.4",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "concurrently": "5.3.0",
@@ -63,27 +81,18 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.1.0",
     "exports-loader": "2.0.0",
+    "husky": "^7.0.0",
     "imports-loader": "1.2.0",
     "npx": "10.2.2",
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "rollup": "2.36.1",
-    "@rollup/plugin-babel": "5.2.2",
     "rollup-plugin-terser": "5.3.1",
-    "@rollup/plugin-node-resolve": "11.0.1",
-    "@rollup/plugin-commonjs": "17.0.0",
-    "@rollup/plugin-json": "^4.1.0",
     "shelljs": "0.8.4",
-    "stylelint": "13.8.0",
-    "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-recommended": "3.0.0",
-    "stylelint-config-recommended-scss": "4.2.0",
-    "stylelint-config-sass-guidelines": "7.1.0",
-    "stylelint-config-standard": "20.0.0",
-    "stylelint-scss": "3.18.0",
-    "webpack": "5.13.0",
-    "webpack-cli": "4.3.1",
-    "webpack-dev-server": "3.11.1",
+    "size-limit": "5.0.4",
+    "webpack": "5.53.0",
+    "webpack-cli": "4.8.0",
+    "webpack-dev-server": "3.11.2",
     "whatwg-fetch": "3.5.0"
   }
 }

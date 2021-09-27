@@ -10,12 +10,4 @@
   "exclude": [
     "node_modules/**"
   ],
-  "plugins": [
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-syntax-jsx",
-    ["@babel/plugin-transform-react-jsx",
-    {
-      "pragma": "MotorCortex.utils.createDOMElement"
-    }]
-  ]
 }

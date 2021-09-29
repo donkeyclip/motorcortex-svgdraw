@@ -84,7 +84,7 @@
     "husky": "^7.0.0",
     "imports-loader": "1.2.0",
     "npx": "10.2.2",
-    "prettier": "2.2.1",
+    "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "rollup": "2.36.1",
     "rollup-plugin-terser": "5.3.1",

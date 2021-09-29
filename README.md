@@ -3,21 +3,21 @@ The library provides the Draw effect which applies progressive rendering of svg 
 Just provide the target percentage (up to which length of the path you want to render)
 and the Effect will animate the svg path render up that point.
 
-[Demo](https://kissmybutton.github.io/motorcortex-svgdraw/demo)
+[Demo](https://donkeyclip.github.io/motorcortex-svgdraw/demo)
 
 ## Installation
 
 ```bash
-$ npm install --save @kissmybutton/motorcortex-svgdraw
+$ npm install --save @donkeyclip/motorcortex-svgdraw
 # OR
-$ yarn add @kissmybutton/motorcortex-svgdraw
+$ yarn add @donkeyclip/motorcortex-svgdraw
 ```
 
 ## Importing and loading
 
 ```javascript
-import MotorCortex from "@kissmybutton/motorcortex";
-import SVGDDef from "@kissmybutton/motorcortex-svgdraw";
+import MotorCortex from "@donkeyclip/motorcortex";
+import SVGDDef from "@donkeyclip/motorcortex-svgdraw";
 const SVGD = MotorCortex.loadPlugin(SVGDDef);
 ```
 
@@ -31,8 +31,8 @@ For each of the selected `path` elements the Effect will draw from the current l
 percentage of the path to the target, provided by the animated attribute `cover` 
 
 ```javascript
-import MotorCortex from "@kissmybutton/motorcortex";
-import SVGDDef from "@kissmybutton/motorcortex-svgdraw";
+import MotorCortex from "@donkeyclip/motorcortex";
+import SVGDDef from "@donkeyclip/motorcortex-svgdraw";
 const SVGD = MotorCortex.loadPlugin(SVGDDef);
 
 const draw = new SVGD.Draw({

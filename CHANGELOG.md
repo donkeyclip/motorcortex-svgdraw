@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.10](https://www.github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.9...v0.0.10) (2021-09-30)
+
+
+### Bug Fixes
+
+* update deps ([8f57b8e](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/8f57b8e2a2a0125646e05c282e9a06057a18ceec))
+
 ### 0.0.9 (2021-09-27)
 
 

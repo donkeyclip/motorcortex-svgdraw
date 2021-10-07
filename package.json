@@ -68,7 +68,7 @@
     "@size-limit/preset-big-lib": "5.0.5",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
-    "concurrently": "6.2.2",
+    "concurrently": "6.3.0",
     "css-loader": "6.3.0",
     "es6-promise": "4.2.8",
     "eslint": "7.32.0",

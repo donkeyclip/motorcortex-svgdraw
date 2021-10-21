@@ -1,8 +1,7 @@
 import MotorCortex from "@donkeyclip/motorcortex";
-import DrawDefinition from "../dist/motorcortex-svgdraw.umd";
-const DrawPlugin = MotorCortex.loadPlugin(DrawDefinition);
-
 import Player from "@donkeyclip/motorcortex-player";
+import DrawDefinition from "../dist/motorcortex-svgdraw.esm";
+const DrawPlugin = MotorCortex.loadPlugin(DrawDefinition);
 
 const clip = new MotorCortex.HTMLClip({
   html: `<div class="container">

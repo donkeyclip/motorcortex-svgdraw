@@ -79,7 +79,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-promise": "5.1.0",
-    "husky": "7.0.2",
+    "husky": "7.0.4",
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "rollup": "2.58.0",

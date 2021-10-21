@@ -1,22 +1,22 @@
 import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
+import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
-import json from "@rollup/plugin-json";
 
 export default [
   {
-    input: "src/main.js",
+    input: "src/index.js",
     external: ["@donkeyclip/motorcortex"],
     output: [
       { file: pkg.main, format: "cjs" },
       { file: pkg.module, format: "es" },
     ],
-    plugins: [resolve(), babel(), commonjs(), terser(), json()],
+    plugins: [resolve(), commonjs(), babel(), json()],
   },
   {
-    input: "src/main.js",
+    input: "src/index.js",
     external: ["@donkeyclip/motorcortex"],
     output: [
       {
@@ -29,11 +29,11 @@ export default [
       },
     ],
     plugins: [
-      resolve({ mainFields: ["module", "main", "browser"] }),
-      babel(),
-      commonjs(),
-      terser(),
       json(),
+      resolve({ mainFields: ["module", "main", "browser"] }),
+      commonjs(),
+      babel(),
+      terser(),
     ],
   },
 ];

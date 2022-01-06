@@ -45,3 +45,9 @@ const draw = new SVGD.Draw({
 });
 ```
 The Effect of the example will fully draw all selected paths in 2000 milliseconds.
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+
+[<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
+

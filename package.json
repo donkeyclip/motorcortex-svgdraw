@@ -5,10 +5,10 @@
   "main": "dist/motorcortex-svgdraw.cjs.js",
   "module": "dist/motorcortex-svgdraw.esm.js",
   "browser": "dist/motorcortex-svgdraw.umd.js",
-  "author": "KissMyButton PC (kissmybutton.gr) <opensource@kissmybutton.gr>",
+  "author": "Donkeyclip (donkeyclip.com) <opensource@donkeyclip.com>>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kissmybutton/motorcortex-svgdraw"
+    "url": "https://github.com/donkeyclip/motorcortex-svgdraw"
   },
   "license": "MIT",
   "engines": {

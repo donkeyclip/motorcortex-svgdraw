@@ -52,10 +52,6 @@ For each of the selected `path` elements the Effect will draw from the current l
 percentage of the path to the target, provided by the animated attribute `cover` 
 
 ```javascript
-import MotorCortex from "@donkeyclip/motorcortex";
-import SVGDDef from "@donkeyclip/motorcortex-svgdraw";
-const SVGD = MotorCortex.loadPlugin(SVGDDef);
-
 const draw = new SVGD.Draw({
     animatedAttrs: {
         cover: 1

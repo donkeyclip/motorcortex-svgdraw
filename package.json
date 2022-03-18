@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-svgdraw",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Progressively render any svg path up to any percent of it",
   "main": "dist/motorcortex-svgdraw.cjs.js",
   "module": "dist/motorcortex-svgdraw.esm.js",

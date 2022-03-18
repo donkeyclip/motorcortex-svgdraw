@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.0.11](https://www.github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.10...v0.0.11) (2022-03-18)
+
+
+### Bug Fixes
+
+* drop code from demo config ([14e8ab8](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/14e8ab885046befd9c2117d0454543413f473cdf))
+* fix broken config ([dd3a83b](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/dd3a83b176c1449f477d7aa7471cb3f58a4d44d5))
+* fix broken webpack config ([878a655](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/878a6557587c7cf32bf88dd23e0de759e5f3a343))
+* update build and demo files drop old babel config ([abce8db](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/abce8db8c0c594bc29b54bcbe3bdef8c8f05e5c1))
+* update build and demo files drop old babel config ([dc8bdd0](https://www.github.com/donkeyclip/motorcortex-svgdraw/commit/dc8bdd03036115356ba9b9a42aaec4b7b51e1697))
+
 ### [0.0.10](https://www.github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.9...v0.0.10) (2021-09-30)
 
 

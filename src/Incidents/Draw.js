@@ -13,9 +13,10 @@ export default class Draw extends MotorCortex.Effect {
     this.pathLength = Math.ceil(this.element.getTotalLength());
   }
 
-  onProgress(fraction) {
+  onProgress(millisecond) {
     const cover =
-      (this.targetValue - this.initialValue) * fraction + this.initialValue;
+      (this.targetValue - this.initialValue) * this.getFraction(millisecond) +
+      this.initialValue;
     this.element.style.strokeDashoffset = Math.ceil(
       this.pathLength * (1 - cover)
     );

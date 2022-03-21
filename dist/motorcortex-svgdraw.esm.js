@@ -135,8 +135,8 @@ var Draw = /*#__PURE__*/function (_MotorCortex$Effect) {
     }
   }, {
     key: "onProgress",
-    value: function onProgress(fraction) {
-      var cover = (this.targetValue - this.initialValue) * fraction + this.initialValue;
+    value: function onProgress(millisecond) {
+      var cover = (this.targetValue - this.initialValue) * this.getFraction(millisecond) + this.initialValue;
       this.element.style.strokeDashoffset = Math.ceil(this.pathLength * (1 - cover));
     }
   }]);

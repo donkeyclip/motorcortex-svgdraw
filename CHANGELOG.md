@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.11...v1.0.0) (2022-03-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mc version
+
+### Bug Fixes
+
+* update mc version ([696bc36](https://github.com/donkeyclip/motorcortex-svgdraw/commit/696bc36a2adca2aeb7927e5532e4c43814984039))
+
 ### [0.0.11](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.10...v0.0.11) (2022-03-19)
 
 

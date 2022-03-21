@@ -145,7 +145,7 @@ var Draw = /*#__PURE__*/function (_MotorCortex$Effect) {
 }(MotorCortex.Effect);
 
 var name = "@donkeyclip/motorcortex-svgdraw";
-var version = "0.0.11";
+var version = "1.0.0";
 
 var index = {
   npm_name: name,

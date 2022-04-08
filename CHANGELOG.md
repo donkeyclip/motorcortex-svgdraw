@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v1.0.0...v1.1.0) (2022-04-08)
+
+
+### Features
+
+* drop explorer 11 support ([007d11c](https://github.com/donkeyclip/motorcortex-svgdraw/commit/007d11c24b628e694bcfc7668f38d7c97401fdb2))
+* update compatibility with motorcortex ([5462777](https://github.com/donkeyclip/motorcortex-svgdraw/commit/5462777394304f1b853fbfdd835feeed09053155))
+
 ## [1.0.0](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v0.0.11...v1.0.0) (2022-03-21)
 
 

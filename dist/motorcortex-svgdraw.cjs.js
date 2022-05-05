@@ -1,15 +1,11 @@
 'use strict';
 
-var MotorCortex = require('@donkeyclip/motorcortex');
+var motorcortex = require('@donkeyclip/motorcortex');
 
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var MotorCortex__default = /*#__PURE__*/_interopDefaultLegacy(MotorCortex);
-
-class Draw extends MotorCortex__default["default"].Effect {
+class Draw extends motorcortex.Effect {
   getScratchValue() {
     this.pathLength = Math.ceil(this.element.getTotalLength());
-    this.element.style.strokeDasharray = this.pathLength + " " + this.pathLength;
+    this.element.style.strokeDasharray = "".concat(this.pathLength, " ").concat(this.pathLength);
     this.element.style.strokeDashoffset = this.pathLength;
     return 0;
   }
@@ -39,7 +35,7 @@ var index = {
         type: "object",
         props: {
           cover: {
-            type: 'number',
+            type: "number",
             min: 0,
             max: 1
           }

@@ -1,9 +1,9 @@
-import MotorCortex from '@donkeyclip/motorcortex';
+import { Effect } from '@donkeyclip/motorcortex';
 
-class Draw extends MotorCortex.Effect {
+class Draw extends Effect {
   getScratchValue() {
     this.pathLength = Math.ceil(this.element.getTotalLength());
-    this.element.style.strokeDasharray = this.pathLength + " " + this.pathLength;
+    this.element.style.strokeDasharray = "".concat(this.pathLength, " ").concat(this.pathLength);
     this.element.style.strokeDashoffset = this.pathLength;
     return 0;
   }
@@ -33,7 +33,7 @@ var index = {
         type: "object",
         props: {
           cover: {
-            type: 'number',
+            type: "number",
             min: 0,
             max: 1
           }

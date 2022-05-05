@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v1.1.0...v1.2.0) (2022-05-05)
+
+
+### Features
+
+* import only effect instead of full MC ([341457f](https://github.com/donkeyclip/motorcortex-svgdraw/commit/341457f746f0f3ade55f31377e05cb1db1adae02))
+* remove useless packages ([b66eded](https://github.com/donkeyclip/motorcortex-svgdraw/commit/b66eded72473ed95ad6852cd17aefdcbc933d6f8))
+
 ## [1.1.0](https://github.com/donkeyclip/motorcortex-svgdraw/compare/v1.0.0...v1.1.0) (2022-04-08)
 
 

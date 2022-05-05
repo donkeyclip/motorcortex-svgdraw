@@ -1,5 +1,5 @@
-import Draw from './Incidents/Draw';
-import {name,version}  from '../package.json'
+import Draw from "./Incidents/Draw";
+import { name, version } from "../package.json";
 
 export default {
   npm_name: name,
@@ -12,14 +12,14 @@ export default {
         animatedAttrs: {
           type: "object",
           props: {
-              cover: {
-                  type: 'number',
-                  min: 0,
-                  max: 1
-              }
-          }
-        }
-      }
-    }
-  ]
+            cover: {
+              type: "number",
+              min: 0,
+              max: 1,
+            },
+          },
+        },
+      },
+    },
+  ],
 };

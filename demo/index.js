@@ -1,9 +1,9 @@
-import MotorCortex from "@donkeyclip/motorcortex";
+import { loadPlugin, HTMLClip } from "@donkeyclip/motorcortex";
 import Player from "@donkeyclip/motorcortex-player";
 import DrawDefinition from "../dist/motorcortex-svgdraw.esm";
-const DrawPlugin = MotorCortex.loadPlugin(DrawDefinition);
+const DrawPlugin = loadPlugin(DrawDefinition);
 
-const clip = new MotorCortex.HTMLClip({
+const clip = new HTMLClip({
   html: `<div class="container">
         <div mc-for="key,item" mc-of="initParams.box">
             <svg width="200" height="200" id="{{'svg-' + key}}" class="logo" xmlns="http://www.w3.org/2000/svg">

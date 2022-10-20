@@ -7,16 +7,13 @@ class Draw extends Effect {
     this.element.style.strokeDashoffset = this.pathLength;
     return 0;
   }
-
   onGetContext() {
     this.pathLength = Math.ceil(this.element.getTotalLength());
   }
-
   onProgress(millisecond) {
     const cover = (this.targetValue - this.initialValue) * this.getFraction(millisecond) + this.initialValue;
     this.element.style.strokeDashoffset = Math.ceil(this.pathLength * (1 - cover));
   }
-
 }
 
 var name = "@donkeyclip/motorcortex-svgdraw";
